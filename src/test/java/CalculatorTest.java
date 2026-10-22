@@ -71,4 +71,10 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testDivideZero() {
+        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> calculator.divide(10, 0));
+        assertEquals("/ by zero", exception.getMessage());
+    }
+
 }
