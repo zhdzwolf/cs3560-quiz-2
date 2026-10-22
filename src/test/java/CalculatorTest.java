@@ -43,4 +43,11 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testMultiply() {
+        int expected = 25480380;
+        int actual = calculator.multiply(19245, 1324);
+        assertEquals(expected, actual);
+    }
+
 }
