@@ -36,4 +36,11 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSubtractZero() {
+        int expected = 2;
+        int actual = calculator.subtract(2, 0);
+        assertEquals(expected, actual);
+    }
+
 }
