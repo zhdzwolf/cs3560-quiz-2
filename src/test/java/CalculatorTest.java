@@ -29,4 +29,11 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSubtractNegative() {
+        int expected = 3;
+        int actual = calculator.subtract(1, -2);
+        assertEquals(expected, actual);
+    }
+
 }
