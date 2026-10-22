@@ -50,4 +50,11 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testMultiplyNegative() {
+        int expected = -247;
+        int actual = calculator.multiply(19, -13);
+        assertEquals(expected, actual);
+    }
+
 }
