@@ -22,4 +22,11 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSumZero() {
+        int expected = 2;
+        int actual = calculator.sum(0, 2);
+        assertEquals(expected, actual);
+    }
+
 }
