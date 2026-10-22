@@ -15,4 +15,11 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSumNegative() {
+        int expected = 1;
+        int actual = calculator.sum(-1, 2);
+        assertEquals(expected, actual);
+    }
+
 }
