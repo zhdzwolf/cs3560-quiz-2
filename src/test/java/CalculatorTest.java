@@ -57,4 +57,11 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testMultiplyZero() {
+        int expected = 0;
+        int actual = calculator.multiply(0, 7);
+        assertEquals(expected, actual);
+    }
+
 }
