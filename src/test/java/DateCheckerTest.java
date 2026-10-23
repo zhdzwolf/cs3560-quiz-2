@@ -2,6 +2,7 @@
 
 import org.junit.jupiter.params.*;
 import org.junit.jupiter.params.provider.EnumSource;
+import org.junit.jupiter.params.provider.NullSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -40,6 +41,12 @@ public class DateCheckerTest {
     })
     public void testIsFebruary(DateChecker.Month month) {
         assertTrue(dateChecker.isFebruary(month));
+    }
+
+    @ParameterizedTest
+    @NullSource
+    public void testNullMonth(DateChecker.Month month) {
+        assertFalse(dateChecker.has31Days(month));
     }
 
 }
