@@ -28,6 +28,10 @@ public class DateChecker {
             Month.APRIL, Month.JUNE, Month.SEPTEMBER, Month.NOVEMBER
     };
 
+    private DateChecker.Month[] month28Days = {
+            Month.FEBRUARY
+    };
+
     public boolean has31Days(Month month) {
         if (Arrays.asList(monthThirtyOneDays).contains(month)) {
             return true;
@@ -44,6 +48,10 @@ public class DateChecker {
         else {
             return false;
         }
+    }
+
+    public boolean isFebruary(Month month) {
+        return false;
     }
 
 }
