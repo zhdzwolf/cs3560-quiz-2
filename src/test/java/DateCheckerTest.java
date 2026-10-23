@@ -36,9 +36,7 @@ public class DateCheckerTest {
 
     @ParameterizedTest
     @EnumSource(value = DateChecker.Month.class, names = {
-            "JANUARY", "FEBRUARY", "MARCH", "APRIL",
-            "MAY", "JUNE", "JULY", "AUGUST",
-            "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
+            "FEBRUARY"
     })
     public void testIsFebruary(DateChecker.Month month) {
         assertTrue(dateChecker.isFebruary(month));

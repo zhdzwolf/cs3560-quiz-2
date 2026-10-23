@@ -19,16 +19,16 @@ public class DateChecker {
         DECEMBER
     }
 
-    private DateChecker.Month[] monthThirtyOneDays = {
+    private final DateChecker.Month[] monthThirtyOneDays = {
             Month.JANUARY, Month.MARCH, Month.MAY,
             Month.JULY,Month.AUGUST, Month.OCTOBER, Month.DECEMBER
     };
 
-    private DateChecker.Month[] monthThirtyDays = {
+    private final DateChecker.Month[] monthThirtyDays = {
             Month.APRIL, Month.JUNE, Month.SEPTEMBER, Month.NOVEMBER
     };
 
-    private DateChecker.Month[] month28Days = {
+    private final DateChecker.Month[] monthTwentyEightDays = {
             Month.FEBRUARY
     };
 
@@ -51,7 +51,12 @@ public class DateChecker {
     }
 
     public boolean isFebruary(Month month) {
-        return false;
+        if (Arrays.asList(monthTwentyEightDays).contains(month)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 }
