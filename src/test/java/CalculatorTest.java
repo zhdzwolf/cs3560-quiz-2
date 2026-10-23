@@ -83,4 +83,10 @@ public class CalculatorTest {
         assertTrue(actual);
     }
 
+    @Test
+    public void testIsOdd() {
+        boolean actual = calculator.isEven(3);
+        assertFalse(actual);
+    }
+
 }
