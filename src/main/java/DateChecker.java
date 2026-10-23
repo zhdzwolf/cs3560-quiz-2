@@ -38,7 +38,12 @@ public class DateChecker {
     }
 
     public boolean exactly30Days(Month month) {
-        return false;
+        if (Arrays.asList(monthThirtyDays).contains(month)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 }
