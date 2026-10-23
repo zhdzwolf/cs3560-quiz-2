@@ -1,5 +1,7 @@
 // final fantasy viii
 
+import java.util.Arrays;
+
 public class DateChecker {
 
     enum Month {
@@ -23,7 +25,12 @@ public class DateChecker {
     };
 
     public boolean has31Days(Month month) {
-        return false;
+        if (Arrays.asList(monthThirtyOneDays).contains(month)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 }
