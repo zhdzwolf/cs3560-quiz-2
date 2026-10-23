@@ -34,4 +34,14 @@ public class DateCheckerTest {
         assertTrue(dateChecker.exactly30Days(month));
     }
 
+    @ParameterizedTest
+    @EnumSource(value = DateChecker.Month.class, names = {
+            "JANUARY", "FEBRUARY", "MARCH", "APRIL",
+            "MAY", "JUNE", "JULY", "AUGUST",
+            "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
+    })
+    public void testIsFebruary(DateChecker.Month month) {
+        assertTrue(dateChecker.isFebruary(month));
+    }
+
 }
