@@ -37,7 +37,7 @@ public class DateChecker {
         }
     }
 
-    public boolean has30Days(Month month) {
+    public boolean exactly30Days(Month month) {
         return false;
     }
 
