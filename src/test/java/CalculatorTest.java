@@ -77,4 +77,10 @@ public class CalculatorTest {
         assertEquals("/ by zero", exception.getMessage());
     }
 
+    @Test
+    public void testIsEven() {
+        boolean actual = calculator.isEven(2);
+        assertTrue(actual);
+    }
+
 }
